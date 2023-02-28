@@ -53,6 +53,13 @@ h3{
   padding-inline: 100px;
   padding-block: 100px;
   position: relative;
+  min-height: 585px;
+}
+
+@media (max-height:1000px){
+  #about{
+    min-height: 900px;
+  }
 }
 
 .picture.left::before {
@@ -73,8 +80,6 @@ h3{
 }
 
 .picture img {
-  width: 100%;
-  height: auto;
 }
 
 #about-me {
@@ -117,7 +122,7 @@ h3{
 .nav-pills .show > .nav-link {
   color: #fff;
   /* background-color: #beb45a; */
-  background-color: #8a8014;
+  background-color: #706811;
   border-radius: 0;
 }
 .nav-pills .nav-link {
