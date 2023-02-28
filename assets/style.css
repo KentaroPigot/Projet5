@@ -53,7 +53,7 @@ h3{
   padding-inline: 100px;
   padding-block: 100px;
   position: relative;
-  min-height: 600px;
+  min-height: 630px;
 }
 
 
@@ -287,7 +287,7 @@ input[type="submit"] {
 @media all and (max-width: 1000px) {
   #about {
     flex-direction: column;
-    min-height: 900px;
+    min-height: 920px;
     
   }
   .picture img {
