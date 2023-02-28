@@ -292,6 +292,7 @@ input[type="submit"] {
   }
   .picture img {
     width: 320px;
+    height: auto;
   }
   .picture.left::before {
     width: 100%;
