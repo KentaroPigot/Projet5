@@ -2,21 +2,29 @@
 <html lang="fr">
   <head>
     <!-- Google tag (gtag.js) -->
-    <script
+    <!-- <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-TKDTFTZMER"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
+      ></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
       gtag("js", new Date());
-
+      
       gtag("config", "G-TKDTFTZMER");
-    </script>
-    <meta charset="UTF-8" />
+    </script> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
 
     <!-- Balises meta -->
     <title>Nina Carducci - Photographe profesionnelle</title>
@@ -26,14 +34,6 @@
     />
     <meta data-react-helmet="true" name="robots" content="index" />
 
-    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" />
-    <link rel="stylesheet" href="./assets/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
-      rel="stylesheet"
-    />
     <script src="./assets/bootstrap/bootstrap.bundle.js"></script>
     <script
       defer
@@ -50,16 +50,20 @@
       <h1 class="name">Nina Carducci</h1>
       <nav class="nav">
         <ul>
-          <li><a href="#about">À propos</a></li>
-          <li><a href="#gallery">Galerie</a></li>
-          <li><a href="#services">Service</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about" tabindex="0">À propos</a></li>
+          <li><a href="#gallery" tabindex="0">Galerie</a></li>
+          <li><a href="#services" tabindex="0">Service</a></li>
+          <li><a href="#contact" tabindex="0">Contact</a></li>
           <li>
             <a
               class="social-link"
               href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
               target="_blank"
-              ><img src="assets/images/instagram.png" alt=" logo instagram"
+              tabindex="0"
+              ><img
+                src="assets/images/instagram.png"
+                alt=" logo instagram"
+                width="20"
             /></a>
           </li>
         </ul>
@@ -80,40 +84,44 @@
               class="active"
               aria-current="true"
               aria-label="Slide 1"
+              tabindex="0"
             ></button>
             <button
               type="button"
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide-to="1"
               aria-label="Slide 2"
+              tabindex="0"
             ></button>
             <button
               type="button"
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide-to="2"
               aria-label="Slide 3"
+              tabindex="0"
             ></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img
-                src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-compressed.jpg"
+                src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-optimized.webp"
+                width="1500"
                 class="d-block w-100"
-                alt="Photo de Ryoji Iwata"
+                alt="Photo d'un japonais en costume cravate avec un attacher case, marchant sur un passage pieton.'"
               />
             </div>
             <div class="carousel-item">
               <img
-                src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-compressed.jpg"
+                src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-optimized.webp"
                 class="d-block w-100"
-                alt="Photo de Nicholas Green"
+                alt="Photo de la foule d'un concert"
               />
             </div>
             <div class="carousel-item">
               <img
-                src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-compressed.jpg"
+                src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-optimized.webp"
                 class="d-block w-100"
-                alt="Photo de Edward Cisneros"
+                alt="Photo de deux marriés qui s'embrasent."
               />
             </div>
           </div>
@@ -140,7 +148,7 @@
       <div id="about">
         <div class="picture left">
           <img
-            src="./assets/images/nina-compressed.png"
+            src="./assets/images/nina-optimized.webp"
             alt="Photo portrait de Nina Carducci"
           />
         </div>
@@ -172,55 +180,55 @@
             <img
               data-gallery-tag="Concert"
               class="gallery-item"
-              src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash-compressed.jpg"
+              src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash-optimized.webp"
               alt="Photo d'un concert où l'on voit une scene avec des lumières rouges"
             />
             <img
               data-gallery-tag="Entreprises"
               class="gallery-item"
-              src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash-compressed.jpg"
+              src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash-optimized.webp"
               alt="Photo d'un homme sobre en costume cravate, croisant les bras, avec un léger sourire"
             />
             <img
               data-gallery-tag="Entreprises"
               class="gallery-item"
-              src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash-compressed.jpg"
+              src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash-optimized.webp"
               alt="Photo de deux femmes qui rigolent au bureau. L'une au premier plan, flou, l'autre au second, nette."
             />
             <img
               data-gallery-tag="Mariages"
               class="gallery-item"
-              src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash-compressed.jpg"
+              src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash-optimized.webp"
               alt="Photo des mains d'un homme marié tenant celles de sa femme."
             />
             <img
               data-gallery-tag="Portrait"
               class="gallery-item"
-              src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash-compressed.jpg"
+              src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash-optimized.webp"
               alt="Photo portrait d'un homme noir qui ferme fort ses yeux."
             />
             <img
               data-gallery-tag="Mariages"
               class="gallery-item"
-              src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash-compressed.jpg"
+              src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash-optimized.webp"
               alt="Photo de mariage d'un couple en tenu de marié qui rigolent, main dans la main, sur une plage sous un cocotier."
             />
             <img
               data-gallery-tag="Portrait"
               class="gallery-item"
-              src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash-compressed.jpg"
+              src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash-optimized.webp"
               alt="Photo portrait d'une jeune femme à lunette qui pose, les cheveux dans le vent, sans regarder l'objectif.'"
             />
             <img
               data-gallery-tag="Concert"
               class="gallery-item"
-              src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash-compressed.jpg"
+              src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash-optimized.webp"
               alt="Photo de concert de Austin Neill. Le chanteur est au centre de l'image en pleine performance, de la fumée blanche et rouge couvre le fond."
             />
             <img
               data-gallery-tag="Entreprises"
               class="gallery-item"
-              src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-compressed.jpg"
+              src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-optimized.webp"
               alt="Photo d'une femme rigolant devant son pc portable."
             />
           </div>
@@ -325,7 +333,7 @@
           </div>
           <div class="picture right">
             <img
-              src="./assets/images/camera-compressed.png"
+              src="./assets/images/camera-optimized.webp"
               alt="Image d'un appareil photo"
             />
           </div>
