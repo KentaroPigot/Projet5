@@ -75,6 +75,7 @@ h3{
 }
 
 .picture img {
+  width: 350px;
 }
 
 #about-me {
@@ -289,8 +290,8 @@ input[type="submit"] {
     min-height: 900px;
     
   }
-  .picture {
-    /* width: 50%; */
+  .picture img {
+    width: 320px;
   }
   .picture.left::before {
     width: 100%;
