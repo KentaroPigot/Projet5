@@ -56,11 +56,6 @@ h3{
   min-height: 585px;
 }
 
-@media (max-height:1000px){
-  #about{
-    min-height: 900px;
-  }
-}
 
 .picture.left::before {
   content: " ";
@@ -291,9 +286,11 @@ input[type="submit"] {
 @media all and (max-width: 1000px) {
   #about {
     flex-direction: column;
+    min-height: 900px;
+    
   }
   .picture {
-    width: 50%;
+    /* width: 50%; */
   }
   .picture.left::before {
     width: 100%;
