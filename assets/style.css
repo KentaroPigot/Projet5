@@ -53,7 +53,7 @@ h3{
   padding-inline: 100px;
   padding-block: 100px;
   position: relative;
-  min-height: 630px;
+  min-height: 635px;
 }
 
 
@@ -291,7 +291,7 @@ input[type="submit"] {
     
   }
   .picture img {
-    width: 320px;
+    width: 270px;
     height: auto;
   }
   .picture.left::before {
