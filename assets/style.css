@@ -12,6 +12,7 @@ h3{
 
 .top-header {
   background-color: white;
+  min-height: 100px;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -80,6 +81,7 @@ h3{
 
 #about-me {
   flex: 2;
+  height: 400px;
 }
 .about-me__title {
   margin-top: 1em;
