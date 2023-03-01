@@ -287,7 +287,7 @@ input[type="submit"] {
 @media all and (max-width: 1000px) {
   #about {
     flex-direction: column;
-    min-height: 920px;
+    min-height: 950px;
     
   }
   .picture img {
