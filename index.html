@@ -2,22 +2,22 @@
 <html lang="fr">
   <head>
     <!-- Google tag (gtag.js) -->
-    <!-- <script
+    <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-TKDTFTZMER"
-      ></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-          dataLayer.push(arguments);
-        }
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
       gtag("js", new Date());
-      
+
       gtag("config", "G-TKDTFTZMER");
-    </script> -->
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/style.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,14 +30,64 @@
     <title>Nina Carducci - Photographe profesionnelle</title>
     <meta
       name="description"
-      content="Vous souhaitez figer vos plus beaux souvenirs ? Garder une trace des plus beaux moments d'une vie ? Laissez-moi les photographier pour vous."
+      content="Quoi de mieux qu'une image pour ne jamais oublier les plus beaux souvenirs ? Vous voulez garder une trace des plus beaux moments de votre vie ? Laissez-moi les photographier pour vous."
     />
     <meta data-react-helmet="true" name="robots" content="index" />
+
+    <!-- Schema.org markup for Google+ -->
+    <meta
+      itemprop="name"
+      content="Nina Carducci - Photographe Profesionnelle"
+    />
+    <meta
+      itemprop="description"
+      content="Quoi de mieux qu'une image pour ne jamais oublier les plus beaux souvenirs ? Vous voulez garder une trace des plus beaux moments de votre vie ? Laissez-moi les photographier pour vous."
+    />
+    <meta
+      itemprop="image"
+      content="https://raw.githubusercontent.com/KentaroPigot/Projet5/master/assets/images/nina-optimized.webp"
+    />
+
+    <!-- Open Graph data -->
+    <meta
+      property="og:title"
+      content="Nina Carducci - Photographe Profesionnelle"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kentaropigot.github.io/Projet5/" />
+    <meta
+      property="og:description"
+      content="Quoi de mieux qu'une image pour ne jamais oublier les plus beaux souvenirs ? Vous voulez garder une trace des plus beaux moments de votre vie ? Laissez-moi les photographier pour vous."
+    />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/KentaroPigot/Projet5/master/assets/images/nina-optimized.webp"
+    />
+    <meta
+      name="google-site-verification"
+      content="_ToieeaM7WxdTw7Ipph_1miJ_-iY5Pd5YcUhfpjnjfI"
+    />
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      content="Nina Carducci - Photographe Profesionnelle"
+    />
+    <meta
+      name="twitter:description"
+      content="Quoi de mieux qu'une image pour ne jamais oublier les plus beaux souvenirs ? Vous voulez garder une trace des plus beaux moments de votre vie ? Laissez-moi les photographier pour vous."
+    />
+    <!-- Twitter Summary card images must be at least 200x200px -->
+    <meta
+      name="twitter:image"
+      content="https://raw.githubusercontent.com/KentaroPigot/Projet5/master/assets/images/nina-optimized.webp"
+    />
   </head>
 
   <body>
     <header class="top-header">
-      <h1 class="name">Nina Carducci</h1>
+      <h1 class="name" itemprop="name">Nina Carducci</h1>
       <nav class="nav">
         <ul>
           <li><a href="#about" tabindex="0">À propos</a></li>
@@ -350,5 +400,32 @@
     ></script>
     <script src="./assets/maugallery.min.js"></script>
     <script src="./assets/scripts.min.js"></script>
+
+    <script type="application/ld+json">
+      {
+        "@context": [
+        "https://schema.org",
+        { "@language": "fr" }
+      ],
+          "@type": "BookSeries",
+          "name": "Nina Carducci",
+          "url" : "https://kentaropigot.github.io/Projet5/",
+          "address": {
+            "@type": "PostalAddress",
+            "adressCountry": "France"
+            "addressLocality": "Bordeaux",
+            "addressRegion": "Gironde",
+            "postalCode": "33200",
+            "streetAddress": "68 avenue Alsace-Lorraine"
+          },
+          "contactPoint" : [
+          { "@type" : "ContactPoint",
+          "telephone" : "+33 5 56 67 78 89",
+          "contactType" : "Direct contact"
+          } ],
+          "openingHours": "Mo-fr 10:00-19:00"
+          "priceRange": "50€-400€",
+      }
+    </script>
   </body>
 </html>
