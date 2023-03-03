@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" itemscope itemtype="http://schema.org/WebPage">
   <head>
     <!-- Google tag (gtag.js) -->
     <!-- <script
@@ -16,7 +16,7 @@
       gtag("config", "G-TKDTFTZMER");
     </script> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link defer rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/style.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -111,7 +111,7 @@
       </nav>
     </header>
     <main>
-      <section id="header">
+      <div id="header">
         <div
           id="carouselExampleIndicators"
           class="carousel slide"
@@ -149,7 +149,6 @@
                 class="d-block w-100"
                 alt="Photo d'un japonais en costume cravate avec un attacher case, marchant sur un passage pieton.'"
                 width="1500"
-                height="100%"
               />
             </div>
             <div class="carousel-item">
@@ -188,11 +187,11 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-      </section>
-      <div id="about">
+      </div>
+      <section id="about">
         <div class="picture left">
           <img
-            srcset="./assets/images/nina-optimized.webp"
+            src="./assets/images/nina-optimized.webp"
             width="350"
             height="349"
             alt="Photo portrait de Nina Carducci"
@@ -218,7 +217,7 @@
             yeux sur vos photos.
           </p>
         </div>
-      </div>
+      </section>
       <section id="gallery">
         <h2 class="title">Portfolio</h2>
         <div class="container py-3">
@@ -380,12 +379,12 @@
           <div class="picture right">
             <img
               src="./assets/images/camera-optimized.webp"
+              sizes="(min-width: 1000px) 350px,
+              (max-width: 999px) 320px"
               srcset="
                 ./assets/images/camera-optimized.webp  1500w,
                 ./assets/images/camera-optimized2.webp 1000w
               "
-              width="350"
-              height="349"
               alt="Image d'un appareil photo"
             />
           </div>
@@ -403,28 +402,26 @@
 
     <script type="application/ld+json">
       {
-        "@context": [
-        "https://schema.org",
-        { "@language": "fr" }
-      ],
-          "@type": "LocalBusiness",
-          "url" : "https://kentaropigot.github.io/Projet5/",
-          "name": "Nina Carducci",
-          "address": {
+        "@context":"https://schema.org",
+        "@language": "fr",
+        "@type": "LocalBusiness",
+        "url" : "https://kentaropigot.github.io/Projet5/",
+        "name": "Nina Carducci",
+        "address": {
             "@type": "PostalAddress",
             "adressCountry": "France"
             "addressRegion": "Gironde",
             "addressLocality": "Bordeaux",
             "postalCode": "33200",
             "streetAddress": "68 avenue Alsace-Lorraine"
-          },
-          "contactPoint" : [
-          { "@type" : "ContactPoint",
+        },
+        "contactPoint" : {
+          "@type" : "ContactPoint",
           "telephone" : "+33 5 56 67 78 89",
           "contactType" : "Direct contact"
-          } ],
-          "openingHours": "Mo-fr 10:00-19:00"
-          "priceRange": "50€-400€",
+        },
+        "openingHours": "Mo-fr 10:00-19:00"
+        "priceRange": "50€-400€",
       }
     </script>
   </body>
