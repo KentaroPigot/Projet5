@@ -49,7 +49,10 @@
     navigation: true,
   };
   $.fn.mauGallery.listeners = function (options) {
-    $(".gallery-item").on("click", function () {
+    $(".gallery-item").on("click keydown", function (event) {
+      if (event.type === "keydown" && event.keyCode !== 13) {
+              return;
+            }
       if (options.lightBox && $(this).prop("tagName") === "IMG") {
         $.fn.mauGallery.methods.openLightBox($(this), options.lightboxId);
       } else {
@@ -57,14 +60,40 @@
       }
     });
 
+    //////////////////////////////////////////////////////////////////////
+
     $(".gallery").on("click", ".nav-link", $.fn.mauGallery.methods.filterByTag);
+
+// Emule un click sur l'élément de filtrage
+      $(".gallery").on("keydown", (e)=>{
+        if(!e.target.querySelector(".nav-link")) return;
+        if(e.keyCode === 13){
+          e.target.querySelector("span").click();
+       }
+      })
+
     $(".gallery").on("click", ".mg-prev", () =>
       $.fn.mauGallery.methods.prevImage(options.lightboxId)
     );
+
+    $(".gallery").on("click", ".mg-prev", () =>
+      $.fn.mauGallery.methods.prevImage(options.lightboxId)
+    );
+
     $(".gallery").on("click", ".mg-next", () =>
       $.fn.mauGallery.methods.nextImage(options.lightboxId)
     );
-  };
+
+    document.addEventListener("keydown", (e)=> {
+      if(e.keyCode === 37){
+        $.fn.mauGallery.methods.prevImage(options.lightboxId)
+    }});
+
+    document.addEventListener("keydown", (e)=> {
+      if(e.keyCode === 39){
+        $.fn.mauGallery.methods.nextImage(options.lightboxId)
+      }});
+    
   $.fn.mauGallery.methods = {
     createRowWrapper(element) {
       if (!element.children().first().hasClass("row")) {
@@ -210,7 +239,7 @@
         '<li class="nav-item" tabindex="0"><span class="nav-link active active-tag"  data-images-toggle="all">Tous</span></li>';
       $.each(tags, function (index, value) {
         tagItems += `<li class="nav-item active" tabindex="0">
-                <span class="nav-link"  data-images-toggle="${value}">${value}</span></li>`;
+                <span  class="nav-link"  data-images-toggle="${value}">${value}</span></li>`;
       });
       var tagsRow = `<ul class="my-4 tags-bar nav nav-pills">${tagItems}</ul>`;
 
