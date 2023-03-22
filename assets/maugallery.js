@@ -64,9 +64,7 @@
 
       $(".gallery").on("keydown", (e)=>{
         if(!e.target.querySelector(".nav-link")) return;
-        console.log(e.target.querySelector("span"));
         if(e.keyCode === 13){
-          console.log("allez");
           e.target.querySelector("span").click();
        }
       })
