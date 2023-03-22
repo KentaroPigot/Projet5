@@ -58,16 +58,15 @@
       } else {
         return;
       }
-    });
-
-    //////////////////////////////////////////////////////////////////////
+    });////////////////////////////////////////////////
 
     $(".gallery").on("click", ".nav-link", $.fn.mauGallery.methods.filterByTag);
 
-// Emule un click sur l'élément de filtrage
       $(".gallery").on("keydown", (e)=>{
         if(!e.target.querySelector(".nav-link")) return;
+        console.log(e.target.querySelector("span"));
         if(e.keyCode === 13){
+          console.log("allez");
           e.target.querySelector("span").click();
        }
       })
@@ -94,6 +93,8 @@
         $.fn.mauGallery.methods.nextImage(options.lightboxId)
       }});
     
+  };
+  
   $.fn.mauGallery.methods = {
     createRowWrapper(element) {
       if (!element.children().first().hasClass("row")) {
